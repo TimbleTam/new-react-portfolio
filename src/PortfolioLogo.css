@@ -1,0 +1,21 @@
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  background-color: rebeccapurple;
+
+
+}
+
+.HeaderFlex {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 100%;
+
+}
