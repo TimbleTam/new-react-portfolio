@@ -35,7 +35,7 @@ function App() {
 
   function PortfolioLogo() {
     return (
-      <div className="PortfolioLogo">
+      <div className="PortfolioLogo ">
           <p>
             Liam Fortune
           </p>
