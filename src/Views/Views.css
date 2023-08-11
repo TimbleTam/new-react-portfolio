@@ -1,0 +1,13 @@
+
+.View
+{
+    background-color: red;
+
+
+}
+
+.View--splash {
+    min-height: 500px;
+    max-height: 100vh;
+
+    }
