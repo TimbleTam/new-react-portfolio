@@ -1,9 +1,10 @@
 const eng = {
 
     //global words
-    GlobalWords: [
-        { key: "Hello", text: "" },
-        ],
+    GlobalWords: {
+        Hello: "Hello, I'm Liam.",
+
+    },
 
 
     Page1: [
@@ -23,3 +24,5 @@ const eng = {
     ],
 
 };
+
+export default eng;

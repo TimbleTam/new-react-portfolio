@@ -1,13 +1,15 @@
 
-.View
-{
-    background-color: red;
-
-
+.View {
+    position: relative;
+    background-color: #193548;
 }
 
 .View--splash {
-    min-height: 500px;
-    max-height: 100vh;
-
-    }
+    background-color: #000c17;
+width: 100vw;
+max-height: 100vh;
+min-height: 90vh;
+position: relative;
+top: 0;
+left: 0;
+}

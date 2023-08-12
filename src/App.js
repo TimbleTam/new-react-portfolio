@@ -1,7 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
-import "./Header.css";
 import "./PortfolioLogo.css";
 import { useState } from "react";
 import HomeView from "./Views/Home/HomeView";
@@ -12,27 +10,19 @@ function App() {
             tabSet(MyTabIndex);
         }
 
-        if (Logo === true) {
+        if (Logo !== true) {
             return (
-                <div className="PortfolioLogo">
+                <div className="HeaderTab">
                     <d onClick={handle_tab_click}>{directory}</d>
                 </div>
             );
         } else {
             return (
-                <div className="PortfolioLog--Big">
+                <div className="HeaderTabBig">
                     <d onClick={handle_tab_click}>Liam Fortune</d>
                 </div>
             );
         }
-    }
-
-    function IndexDisplay({ Displayvalue }) {
-        return (
-            <div className="deez">
-                <p>{Displayvalue}</p>
-            </div>
-        );
     }
 
     function PortfolioBody({ tab }) {
@@ -82,23 +72,11 @@ function App() {
 
     return (
         <div className="App">
-            <SiteHeader />
+
             <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <IndexDisplay Displayvalue={tabValue} />
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
             <PortfolioBody tab={tabValue} />
+            </header>
+            <SiteHeader />
         </div>
     );
 }
