@@ -56,7 +56,7 @@ function App() {
 
     function SiteHeader() {
         return (
-            <div className="Header">
+            <div className="HeaderNav">
                 <div className="HeaderFlex">
                     <PortfolioLink directory={"About"} MyTabIndex={1} />
                     <PortfolioLink directory={"Projects"} MyTabIndex={2} />

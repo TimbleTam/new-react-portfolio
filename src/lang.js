@@ -3,12 +3,12 @@ const eng = {
     //global words
     GlobalWords: {
         Hello: "Hello, I'm Liam.",
-
+        IAM: "I'm a software Developer"
     },
 
 
     Page1: [
-        { key: "Hello", text: "" }
+
     ],
     Page2:[
         { key: "Hello", text: "" }

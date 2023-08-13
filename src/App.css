@@ -16,10 +16,12 @@
 @keyframes HeroSpawn {
   from {
     opacity: 0;
+    filter: blur(10px);
     translate: 0% 100%;
   }
   to {
     opacity: 1;
+    filter: blur(0px);
     translate: 0% 0%;
   }
 }
@@ -74,6 +76,10 @@ animation: HeroSpawn 0.75s forwards ease-out;
   margin: 0;
 }
 
+.HeroTextElement:nth-last-child()::after {
+  white-space:nowrap;
+}
+
 .App-header {
   background-color: #15232c;
   min-height: 100vh;
@@ -81,6 +87,10 @@ animation: HeroSpawn 0.75s forwards ease-out;
   position: absolute;
   top: 50px;
 
+}
+
+.ImportantText {
+  color: #61dafb;
 }
 
 .App-link {

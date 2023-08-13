@@ -5,7 +5,7 @@ function HeroText({ val }) {
 
     function HeroTextElement({ input, timing }) {
         const mystyle = {
-            animationDelay: timing
+            "animationDelay": timing + "ms"
           };
         return (
             <h1 className="HeroTextElement" style={mystyle}>{input}</h1>
@@ -18,7 +18,7 @@ function HeroText({ val }) {
         const stringarray = lis.split(" ");
         const rows = [];
         for (let index = 0; index < stringarray.length; index++) {
-                let UniqueTime = (1000 * index).toString();
+                let UniqueTime = (250 * index).toString();
                 rows.push(<HeroTextElement input={stringarray[index] + " "} timing={UniqueTime} />);
         }
         return (rows);

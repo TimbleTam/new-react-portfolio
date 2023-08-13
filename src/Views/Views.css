@@ -13,3 +13,24 @@ position: relative;
 top: 0;
 left: 0;
 }
+
+
+.SplitView {
+    margin: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.SplitView1 {
+    width: 100%;
+
+    min-height: 10px;
+}
+.SplitView2 {
+    width: 100%;
+
+    min-height: 10px;
+}

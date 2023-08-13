@@ -1,0 +1,38 @@
+.CarouselContain {
+    width: 100%;
+    position: relative;
+    height: 25vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.CarouselList {
+    position: relative;
+    width: 100%;
+    height: 25vh;
+
+
+}
+
+@keyframes carouselTravel {
+    from {
+        translate: 0% -50%;
+        opacity: 1;
+        top: 50%;
+        left: 100%;
+    }
+    to {
+        translate: -100% -50%;
+        opacity: 1;
+        top: 50%;
+        left: 0%;
+    }
+}
+
+.CarouselElement {
+    max-height: 25vh;
+    position: absolute;
+    opacity: 0;
+    animation: carouselTravel linear infinite;
+}
+
